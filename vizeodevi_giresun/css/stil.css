@@ -1,0 +1,154 @@
+.kisim1{
+    height: 700px;
+    background-image: url("../img/giresun1.jpg");
+    background-size: cover;
+    position: relative;
+}
+.kisim1 img.logo{
+    position: absolute;
+    top: 5px;
+    left: 65%;
+}
+.kisim1 img.menu1{
+    position: absolute;
+    top: 620px;
+    width: 100%;
+  
+}
+.kisim1 p.slogan{
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', italic, sans-serif;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.kisim1 a.menubar1{
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', italic, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+ul, li{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.kisim1 nav{
+    margin-left: auto;
+    margin-right: auto;
+    width: 580px;
+}
+.kisim1 nav ul{
+    position: absolute;
+    top: 585px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', italic, sans-serif;
+    font-size: 30px;
+}
+.kisim1 nav ul li{
+    float: left;
+    padding: 30px;
+}
+.kisim1 nav ul li a{
+    color: white;
+}
+.kisim1 nav ul li a:hover{
+    color: #8df967;
+}
+.kisim2 p.yazi{
+    position: absolute;
+    top: 900px;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', italic, sans-serif;
+    font-size: 30px;
+    width: 610px;
+    text-align: left;
+    color: 	#006634;
+}
+.kisim2 img.ilharita{
+    position: absolute;
+    top: 710px;
+    right: 5%;
+}
+.kisim2 img.serit{
+    position: absolute;
+    top: 1110px;
+    left: 2%;
+}
+.kisim2 img.nufus{
+    position: absolute;
+    top: 1150px;
+    left: 5%;
+}
+.kisim2 img.yuzolcumu{
+    position: absolute;
+    top: 1185px;
+    left: 33%;
+}
+.kisim2 p.nufus{
+    position: absolute;
+    top: 1355px;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', italic, sans-serif;
+    font-size: 40px;
+    width: 100x;
+    text-align: left;
+    color: #dc3536;
+}
+.kisim2 p.yuzolcumu{
+    position: absolute;
+    top: 1355px;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', italic, sans-serif;
+    font-size: 40px;
+    width: 100x;
+    text-align: left;
+    color: #dc3536;
+}
+.kisim3{
+    height: 100px;
+    background-color: #006634;
+    background-size: cover;
+    position: relative;
+    top: 900px;
+}
+.kisim3 p.altyazi1{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', italic, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    color: #8df967;
+}
+.kisim3 p.altyazi2{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', italic, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: #8df967;
+}
+.kisim3 img{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Indie+Flower&family=Kanit&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <title>Mustafa Mert Kısa</title>
+    <style>
+        body{
+            background-color: #D9D9D9;
+        }
+        .metin{
+            position: absolute;
+            background-color: #0388A6;
+            left: 5%;
+            margin-left:-35px;
+            top: 150px;
+            border-style: solid; border-width: 3px;
+            overflow: hidden;
+        }
+        .sonuc{
+            position: absolute;
+            background-color: #03A696;
+            left: 35%;
+            margin-left: 525px;
+            top: 150px;
+            border-style: solid; border-width: 3px;
+            overflow: hidden;
+        }
+        .yazi{
+            position: absolute;
+            background-color: #F28705;
+            left: 35%;
+            margin-left: -35px;
+            top: 150px;
+            width: 500px;
+            height: 200px;
+            border-style: solid; border-width: 3px; 
+        }
+        .kenarlik{
+            position: absolute;
+            background-color: #F27E93;
+            left: 35%;
+            margin-left: -35px;
+            top: 390px;
+            width: 500px;
+            height: 200px;
+            border-style: solid; border-width: 3px; 
+        }
+        p{
+            word-wrap:break-word;
+        }
+        textarea{
+            word-wrap:break-word;
+        }
+        #metin{
+            width: 400px;
+            height: 380px;
+            text-align: center;
+        }
+        #sonuc{
+            width: 410px;
+            height: 380px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            background-color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        #liste{
+            position: absolute;
+            top: 115px;
+            left: 20px;
+        }
+        #range{
+            position: absolute;
+            top: 115px;
+            left: 180px;
+        }
+        #renk{
+            position: absolute;
+            top: 115px;
+            left: 400px;
+       
+        }
+        #liste2{
+            position: absolute;
+            top: 115px;
+            left: 20px;
+        }
+        #range2{
+            position: absolute;
+            top: 115px;
+            left: 180px;
+        }
+        #renk2{ 
+            position: absolute;
+            top: 95px;
+            left: 400px;
+        }
+        #renk3{
+            position: absolute;
+            top: 160px;
+            left: 400px;
+        }
+        #yazitipi{
+            position: absolute;
+            top: 55px;
+            left: 20px;
+        }
+        #yaziboyutu{
+            position: absolute;
+            top: 55px;
+            left: 180px;
+        }
+        #yazirengi{
+            position: absolute;
+            top: 55px;
+            left: 400px;
+        }
+        #kenarlikstili{
+            position: absolute;
+            top: 55px;
+            left: 20px;
+        }
+        #kenarlikkalinligi{
+            position: absolute;
+            top: 55px;
+            left: 180px;
+        }
+        #kenarlikrengi{
+            position: absolute;
+            top: 45px;
+            left: 370px;
+        }
+        #arkaplanrengi{
+            position: absolute;
+            top: 110px;
+            left: 370px;
+        }
+    </style>
+</head>
+<body> 
+    <div class="metin" align="center">
+        <h3 id="metinbaslik">METİN</h3>
+        <input type="textarea" id="metin" style="border: none">
+    </div>
+
+    <div class="yazi" align="center">
+        <h3 id="yaziayarlari">YAZI AYARLARI</h3>
+
+        <h4 id="yazitipi">Yazı Tipi</h4>
+        <select name="liste" id="liste">
+            <option value='Roboto', sans-serif; selected>Roboto</option>
+            <option value='Indie Flower', cursive;>Indie Flower</option>
+            <option value='Acme', sans-serif;>Acme</option>
+            <option value='Kanit', sans-serif;>Kanit</option>
+            <option value='Anton', sans-serif;>Anton</option>
+        </select>
+
+        <h4 id="yaziboyutu">Yazı Boyutu</h4>
+        <input type="range" id="range" min="16" max="50" value="16">
+
+        <h4 id="yazirengi">Yazı Rengi</h4>
+        <input type="color" id="renk" value="#000000">
+    </div>
+
+    <div class="kenarlik" align="center">
+        <h3 id="yaziayarlari">ARKAPLAN & KENARLIK AYARLARI</h3>
+
+        <h4 id="kenarlikstili">Kenarlık Stili</h4>
+        <select name="liste2" id="liste2">
+            <option value="solid 3px" selected>Düz</option>
+            <option value="dotted">Nokta</option>
+            <option value="dashed">Kesik Çizgi</option>
+            <option value="double">Çift Çizgi</option>
+        </select>
+
+        <h4 id="kenarlikkalinligi">Kenarlık Kalınlığı</h4>
+        <input type="range" id="range2" min="3" max="24" value="3">
+
+        <h4 id="kenarlikrengi">Kenarlık Rengi</h4>
+        <input type="color" id="renk2" value="#000000">
+
+        <h4 id="arkaplanrengi">Arkaplan Rengi</h4>
+        <input type="color" id="renk3" value="#ffffff">
+    </div>
+
+    <div class="sonuc" id="sonuckutu" align="center">
+        <h3 id="sonucbaslik">SONUÇ</h3>
+        <p id="sonuc"></p>
+    </div>
+    <script>
+        metin.oninput=function(){
+            document.getElementById("sonuc").innerHTML=document.getElementById("metin").value;
+        }
+        liste.oninput=function(){
+            document.getElementById("sonuc").style.fontFamily=document.getElementById("liste").value;
+        }
+        range.oninput=function(){
+            document.getElementById("sonuc").style.fontSize=range.value+"px";
+        }
+        renk.oninput=function(){
+            document.getElementById("sonuc").style.color=renk.value;
+        }
+        liste2.oninput=function(){
+            document.getElementById("sonuckutu").style.border=document.getElementById("liste2").value;
+        }
+        range2.oninput=function(){
+            document.getElementById("sonuckutu").style.borderWidth=range2.value+"px";
+        }
+        renk2.oninput=function(){
+            document.getElementById("sonuckutu").style.borderColor=renk2.value;
+        }
+        renk3.oninput=function(){
+            document.getElementById("sonuc").style.backgroundColor=renk3.value;
+        }
+    </script>
+</body>
+</html>
